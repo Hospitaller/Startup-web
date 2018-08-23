@@ -34,7 +34,7 @@ body {
 .headerTopLine {
     display: flex;
     justify-content: space-around;
-    padding: 45px 0;
+    padding: 30px 0;
 }
 
 //menu custom style
@@ -46,28 +46,35 @@ body {
     color: @whiteColor;
     font-family: @mainFont;
     font-size: 14px;
-    padding-right: 0.7rem;
-    padding-left: 0.7rem;
+    padding-right: 0.9rem;
+    padding-left: 0.9rem;
     border: none;
+}
+.navbar {
+    padding: 0;
 }
 .headerTitle {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     text-align: center;
     width: 100%;
     height: 30%;
-    margin-top: 140px;
+    margin-top: 215px;
         color: @whiteColor;
     & h1 {
+        margin-bottom: 15px;
         font-family: @mainFont;
+        font-size: 3.1rem;
+        text-transform: uppercase;
     }
-    & h4 {
+    & h5 {
         font-family: @secondFont;
     }
 }
+//buton custom style
 .btn-outline-primary {
+    margin-top: 42px;
     width: 180px;
     padding: 10px 10px;
     border: 1px solid white;
@@ -78,4 +85,100 @@ body {
         background-color: transparent;
         border-color: pink;
     }
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+    background-color: transparent;
+    border-color: white;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+.btn-outline-primary.focus,
+.btn-outline-primary:focus {
+    box-shadow: none;
+}
+//**************serices******
+.services {
+    padding-top: 55px;
+    display: flex;
+    flex-direction: column;
+    height: 580px;
+    justify-content: center;
+    align-items: center;
+}
+.servicesTitle {
+    text-align: center;
+    color: #555555;
+    & h3 {
+        
+        font-family: @mainFont;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+    & p {
+        margin-top: 30px;
+        font-family: @secondFont;
+        font-size: 16px;
+    }
+}
+
+.servicesLine {
+    margin: 0 auto;
+    height: 2px;
+    width: 50px;
+    background-color: grey;
+    margin-top: 25px;
+}
+.servicesUnitWraper {
+    display: flex;
+    width: 75%;
+    justify-content: space-evenly;
+    margin: 45px 0;
+    
+}
+.servicesUnit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 360px;
+}
+.servicesUnitTitle {
+    color: #555555;
+    & h4 {
+        font-family: @mainFont;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+    & p {
+        font-family: @secondFont;
+        font-size: 14px;
+        text-align: justify;
+    }
+}
+
+.sevicesUnitLogoLeft {
+    margin-bottom: 30px;
+    width: 90px;
+    height: 90px;
+    background-image: url("../img/services_unit_logo_left.png");
+}
+.sevicesUnitLogoCenter {
+    margin-bottom: 30px;
+    width: 90px;
+    height: 90px;
+    background-image: url("../img/services_unit_logo_center.png");
+}
+.sevicesUnitLogoRight {
+    margin-bottom: 30px;
+    width: 90px;
+    height: 90px;
+    background-image: url("../img/services_unit_logo_right.png");
 }
