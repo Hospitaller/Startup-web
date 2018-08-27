@@ -212,3 +212,102 @@ menu {
   height: 90px;
   background-image: url("../img/services_unit_logo_right.png");
 }
+.aboutUsBlock {
+  min-height: 852px;
+  height: 100%;
+  width: 100%;
+  padding: 55px 220px;
+  background-color: #f8f8f8;
+}
+.aboutUsText {
+  font-family: 'Roboto Slab', serif;
+  color: #555555;
+  font-size: 14px;
+}
+.aboutUsText p {
+  margin: 70px 0;
+}
+.aboutUsUnit {
+  min-width: 263px;
+  height: 100%;
+  text-align: center;
+}
+.aboutUsImg {
+  height: 250px;
+  margin-bottom: 20px;
+  background-color: black;
+}
+.aboutUsImg img {
+  transition-duration: .3s;
+}
+.aboutUsImg :hover {
+  opacity: 1;
+  opacity: 0.8;
+  transition-duration: .3s;
+}
+.aboutUsUnitName {
+  font-family: 'Montserrat', sans-serif;
+  color: #555555;
+  font-size: 12px;
+  background-color: #f8f8f8;
+}
+.aboutUsUnitName :first-child {
+  text-transform: uppercase;
+}
+.aboutUsSlider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+.arrowLeft {
+  position: absolute;
+  top: 100px;
+  left: 14px;
+  width: 35px;
+  height: 38px;
+  text-align: center;
+  background-color: #555555;
+}
+.arrowRight {
+  position: absolute;
+  top: 100px;
+  left: 1110px;
+  width: 35px;
+  height: 38px;
+  text-align: center;
+  background-color: #555555;
+}
+.socialBlock_1 {
+  position: absolute;
+  background-color: red;
+  top: 220px;
+  left: 75px;
+  width: 140px;
+  height: 25px;
+}
+.socialBlock_2 {
+  position: absolute;
+  background-color: red;
+  top: 220px;
+  left: 370px;
+  width: 140px;
+  height: 25px;
+}
+.socialBlock_3 {
+  position: absolute;
+  background-color: red;
+  top: 220px;
+  left: 660px;
+  width: 140px;
+  height: 25px;
+}
+.socialBlock_4 {
+  position: absolute;
+  background-color: red;
+  top: 220px;
+  left: 955px;
+  width: 140px;
+  height: 25px;
+}
