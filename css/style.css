@@ -269,6 +269,7 @@ menu {
   height: 38px;
   text-align: center;
   background-color: #555555;
+  z-index: 500;
 }
 .arrowRight {
   position: absolute;
@@ -280,17 +281,21 @@ menu {
   background-color: #555555;
 }
 .socialBlock_1 {
+  display: none;
   position: absolute;
-  background-color: red;
-  top: 220px;
+  opacity: 1;
+  top: 200px;
   left: 75px;
   width: 140px;
   height: 25px;
+  color: white;
+  z-index: 500;
+  font-size: 20px;
 }
 .socialBlock_2 {
   position: absolute;
   background-color: red;
-  top: 220px;
+  top: 200px;
   left: 370px;
   width: 140px;
   height: 25px;
@@ -298,7 +303,7 @@ menu {
 .socialBlock_3 {
   position: absolute;
   background-color: red;
-  top: 220px;
+  top: 200px;
   left: 660px;
   width: 140px;
   height: 25px;
@@ -306,8 +311,11 @@ menu {
 .socialBlock_4 {
   position: absolute;
   background-color: red;
-  top: 220px;
+  top: 200px;
   left: 955px;
   width: 140px;
   height: 25px;
+}
+.visible {
+  display: block;
 }
