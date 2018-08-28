@@ -271,6 +271,9 @@ menu {
     min-width: 263px;
     height: 100%;
     text-align: center;
+    & socialBlock_1 {
+        
+    }
 
 }
 .aboutUsImg {
@@ -316,6 +319,9 @@ menu {
     text-align: center;
     background-color: @mainTextColor;
     z-index: 500;
+    &:hover {
+        background: red;
+    }
     
 }
 .arrowRight {
@@ -326,43 +332,46 @@ menu {
     height: 38px;
     text-align: center;
     background-color: @mainTextColor;
+    z-index: 500;
+    &:hover {
+        background: red;
+    }
 }
-.socialBlock_1 {
+.unitSocialBlock {
     display: none;
     position: absolute;
     opacity: 1;
-    top: 200px;
-    left: 75px;
     width: 140px;
     height: 25px;
     color: white;
     z-index: 500;
     font-size: 20px;
+}
+.socialBlock_1 {
+    
+    top: 200px;
+    left: 75px;
+    
+    
     
 }
 .socialBlock_2 {
-    position: absolute;
-    background-color: red;
+    
     top: 200px;
     left: 370px;
-    width: 140px;
-    height: 25px;
+    
 }
 .socialBlock_3 {
-    position: absolute;
-    background-color: red;
+    
     top: 200px;
     left: 660px;
-    width: 140px;
-    height: 25px;
+    
 }
 .socialBlock_4 {
-    position: absolute;
-    background-color: red;
+    
     top: 200px;
     left: 955px;
-    width: 140px;
-    height: 25px;
+   
 }
 
 .visible {
