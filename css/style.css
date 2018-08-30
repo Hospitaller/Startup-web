@@ -317,6 +317,8 @@ menu {
   left: 955px;
 }
 .latestWorksBlock {
+  width: 100%;
+  min-height: 1380px;
   display: flex;
   flex-direction: column;
   align-items: center;
