@@ -271,29 +271,26 @@ menu {
     min-width: 263px;
     height: 100%;
     text-align: center;
-    & socialBlock_1 {
-        
-    }
+    margin: 0 50px;
+   
 }
 
-.visio {
-    display: hidden;
-}
+
 
 .aboutUsImg {
     height: 250px;
     margin-bottom: 20px;
     background-color: black;
+    & :hover {
+        transition-duration: .3s;
+        filter: brightness(80%);
+}     
+    }
     & img {
         transition-duration: .3s;
     }
-    & :hover {
-        opacity: 1;
-        opacity: 0.8;
-        transition-duration: .3s;
-            
-    }
-}
+    
+
 
 .aboutUsUnitName {
     font-family: @mainFont;
@@ -341,42 +338,31 @@ menu {
         background: red;
     }
 }
-.unitSocialBlock {
-    display: none;
-    position: absolute;
+
+.socialBlock_1 {
+    
+    position: relative;
+    visibility: hidden;
     opacity: 1;
-    width: 140px;
-    height: 25px;
+    color: white;
+    
+    font-size: 20px;
+    top: 225px;
+    
+    
+    
+    
+}
+.socialBlockSettings {
+    position: relative;
+    visibility: hidden;
     color: white;
     z-index: 500;
     font-size: 20px;
+    top: 225px;
 }
-.socialBlock_1 {
-    
-    top: 200px;
-    left: 75px;
-    
-    
-    
-}
-.socialBlock_2 {
-    
-    top: 200px;
-    left: 370px;
-    
-}
-.socialBlock_3 {
-    
-    top: 200px;
-    left: 660px;
-    
-}
-.socialBlock_4 {
-    
-    top: 200px;
-    left: 955px;
-   
-}
+
+
 .latestWorksBlock {
     width: 100%;
     min-height: 1380px;
