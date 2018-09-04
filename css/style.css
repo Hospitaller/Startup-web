@@ -339,3 +339,28 @@ menu {
 .latestWorksMenu ul li a {
   color: #555555;
 }
+/*sdsds*/
+.slider {
+  width: 800px;
+  margin: 100px auto;
+}
+.slick-slide {
+  margin: 0px 20px;
+}
+.slick-slide img {
+  width: 100%;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: .2;
+}
+.slick-active {
+  opacity: .5;
+}
+.slick-current {
+  opacity: 1;
+}
