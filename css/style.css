@@ -1,3 +1,41 @@
+.aboutUsUnit {
+  position: relative;
+  min-width: 200px;
+  min-height: 150px;
+  margin: 0 60px;
+}
+.aboutUsImg {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  background: black;
+  /*Тут черный фон в блок для затенения опасити*/
+}
+.aboutUsImg img {
+  width: 100%;
+  transition: .5s;
+}
+.aboutUsUnit:hover .aboutUsImg img {
+  transform: rotate(-10deg) scale(1.3);
+  filter: blur(1px);
+  opacity: .5;
+}
+.aboutUsUnit:hover .socialBlock_1 {
+  opacity: 1;
+  transition: .5s;
+}
+.socialBlock_1 {
+  color: white;
+  opacity: 0;
+  transition: .5s;
+}
+.socialBlock {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  text-align: center;
+}
 * {
   margin: 0;
 }
@@ -227,44 +265,29 @@ menu {
 .aboutUsText p {
   margin: 70px 0;
 }
-.aboutUsUnit {
-  min-width: 263px;
-  height: 100%;
-  text-align: center;
-  margin: 0 50px;
-}
-.aboutUsImg {
-  height: 250px;
-  margin-bottom: 20px;
-  background-color: black;
-}
-.aboutUsImg :hover {
-  transition-duration: .3s;
-  filter: brightness(80%);
-}
-img {
-  transition-duration: .3s;
-}
-.aboutUsUnitName {
-  font-family: 'Montserrat', sans-serif;
-  color: #555555;
-  font-size: 12px;
-  background-color: #f8f8f8;
-}
-.aboutUsUnitName :first-child {
-  text-transform: uppercase;
+.testDivider {
+  overflow: hidden;
+  transition: 1s;
 }
 .aboutUsSlider {
+  transition: 1s;
   position: relative;
   width: 100%;
-  overflow: hidden;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.testDivider {
+  position: relative;
+  width: 100%;
+  height: 270px;
   display: flex;
   justify-content: space-around;
 }
 .arrowLeft {
   position: absolute;
-  top: 100px;
-  left: 14px;
+  top: 30%;
+  left: 0;
   width: 35px;
   height: 38px;
   text-align: center;
@@ -276,8 +299,8 @@ img {
 }
 .arrowRight {
   position: absolute;
-  top: 100px;
-  left: 1110px;
+  top: 30%;
+  right: 0;
   width: 35px;
   height: 38px;
   text-align: center;
@@ -286,22 +309,6 @@ img {
 }
 .arrowRight:hover {
   background: red;
-}
-.socialBlock_1 {
-  position: relative;
-  visibility: hidden;
-  opacity: 1;
-  color: white;
-  font-size: 20px;
-  top: 225px;
-}
-.socialBlockSettings {
-  position: relative;
-  visibility: hidden;
-  color: white;
-  z-index: 500;
-  font-size: 20px;
-  top: 225px;
 }
 .latestWorksBlock {
   width: 100%;

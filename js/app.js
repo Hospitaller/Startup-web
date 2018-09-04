@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/*  $(document).ready(function(){
     for (var i = 0; i<arr.length; i++) {
         arr[i].addClass('animated fadeOutDown');
     }
@@ -13,33 +13,40 @@ var arr = [
 ];
 
 function showBlock (i) {
-    clearTimeout(timeoutId);
     var socialBlock = arr[i];
-    socialBlock.show().removeClass('animated fadeOutDown').css('visibility','visible').addClass('animated fadeInUp'),
-    function () {
-        
-    };
+    socialBlock.show().removeClass('animated fadeOutDown').addClass('animated fadeInUp').css('visibility','visible')
 }
 function hideBlock (i){
     var socialBlock = arr[i];
     socialBlock.removeClass('animated fadeInUp').addClass('animated fadeOutDown');
 }
-//*********************************** */
 
-$(document).ready(function() {
- 
-    var socialBlock = $('.socialBlock_1'),
+
+var linc2 = $('.socialBlock_1'),
     timeoutId;
 $('.aboutUsImg').hover(function(){
     clearTimeout(timeoutId);
-    socialBlock.show().addClass('animated fadeInUp');
+    linc2.show();
 }, function(){
-    timeoutId = setTimeout($.proxy(socialBlock,'hide'), 300)
+    timeoutId = setTimeout($.proxy(linc2,'hide'), 1000)
 });
-socialBlock.mouseenter(function(){
+linc2.mouseenter(function(){
     clearTimeout(timeoutId); 
 }).mouseleave(function(){
-    socialBlock.hide();
+    linc2.hide();
 }); 
+ */
 
-})
+var coord = 0;
+var block = $('.aboutUsSlider');
+
+
+function testLeft(){
+    coord = coord + 320;
+    block.css('left',+coord+'px');
+}
+function testRight(){
+    coord = coord - 320;
+    block.css('left',+coord+'px');
+}
+
