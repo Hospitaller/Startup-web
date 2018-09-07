@@ -253,7 +253,7 @@ menu {
     min-height: 852px;
     height: 100%;
     width: 100%;
-    padding: 55px 220px;
+    padding: 100px 30px;
     background-color: @lightGreyColor;
 }
 
@@ -263,32 +263,36 @@ menu {
     font-size: 14px;
     & p {
         margin: 70px 0;
+        .customRespond (0px,
+        1200px,
+            {
+            margin: 25px 0;
+        }
+        );
     }
 }
 
-
-
-
-
-.testDivider {
-    overflow: hidden;
-    transition: 1s;
+.aboutUsSliderWraper {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
 }
+
 .aboutUsSlider {
     transition: 1s;
     position: relative;
-    
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-around;
-    
 }
-.testDivider {
+
+.arrowWraper {
+    overflow: hidden;
+    transition: 1s;
     position: relative;
-    width:100%;
+    width: 100%;
     height: 270px;
-    
     display: flex;
     justify-content: space-around;
 }
@@ -305,12 +309,12 @@ menu {
     &:hover {
         background: red;
     }
-    
 }
+
 .arrowRight {
     position: absolute;
     top: 30%;
-   right: 0;
+    right: 0;
     width: 35px;
     height: 38px;
     text-align: center;
@@ -321,9 +325,6 @@ menu {
     }
 }
 
-
-
-
 .latestWorksBlock {
     width: 100%;
     min-height: 1380px;
@@ -331,16 +332,16 @@ menu {
     flex-direction: column;
     align-items: center;
 }
+
 .latestWorksTitle {
     margin-top: 100px;
     font-family: @mainFont;
     color: @mainTextColor;
 }
+
 .latestWorksMenu {
-    
     & ul {
         font-family: @mainFont;
-        
         margin-top: 28px;
         text-decoration: none;
         list-style: none;
@@ -349,49 +350,75 @@ menu {
         & li {
             margin-left: 20px;
             &:first-child {
-                & a{
+                & a {
                     color: red;
                 }
-                
             }
             & a {
                 color: @mainTextColor;
-                
             }
         }
     }
 }
 
-/*sdsds*/
-.slider {
-    width: 800px;
-    margin: 100px auto;
+.worksLineWraper {
+    display: flex;
+    margin: 15px 0;
+}
+.worksLineUnitImg {
+    transition: .5s;
+    background-color: #c0301c;
+   
+}
+.worksLineUnit:hover .worksLineUnitImg {
+    filter: opacity(50%);
+}
+.worksLineUnit:hover .worksLineButtonAndText{
+    opacity: 1;
+    top: 30%;
+
+}
+.worksLineUnit {
+    background-color: #c0301c;
+    width: 360px;
+    height: 320px;
+
+}
+.worksLineButtonAndText {
+    transition: .5s;
+   opacity: 0;
+    position: absolute;
+    top: 200px;
+    left: 30%;
+    z-index: 500;
+    text-align: center;
+    h4 {
+        font-family: @mainFont;
+        color: @whiteColor;
+        font-size: 24px;
+    }
+    p {
+        font-family: @secondFont;
+        color: @whiteColor;
+        font-size: 18px;
+    }
+    button {
+        width: 100px;
+        height: 38px;
+        
+        
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        border: none;
+        cursor: pointer;
+        
+        a {
+            font-family: @secondFont;
+            color: #c0301c;
+            text-decoration: none;
+            
+        }
+    }
 }
 
-.slick-slide {
-  margin: 0px 20px;
-}
-
-.slick-slide img {
-  width: 100%;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-}
-
-
-.slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: .2;
-}
-
-.slick-active {
-  opacity: .5;
-}
-
-.slick-current {
-  opacity: 1;
-}
 
